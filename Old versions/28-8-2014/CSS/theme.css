@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+
+body {
+		font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+		font-weight: 300;
+		background-color: rgb(153, 153, 153);
+		color: rgb(40, 40, 40);
+		text-shadow: 0 0 2px rgba(255,255,255,0.5);
+		text-align: justify;
+		padding-top: 180px;
+		padding-bottom: 180px;
+}
+
+table, .empty, td, tr {
+		margin: 0;
+		padding: 0;
+		border-spacing: 0;
+		border-collapse: collapse;
+}
+
+.img-table {
+		border-top: 1px solid rgb(180, 180, 180);
+		border-bottom: 1px solid rgb(180, 180, 180);
+		margin: 30px auto;
+		text-align: center;
+		padding: 0px;
+		overflow: hidden;
+}
+img {
+		display: block;
+}
+.image {
+		height: 350px;
+		width: auto;
+		transition: all 0.2s ease 0s;
+		padding: 20px;
+		display: initial;
+}
+.image:hover {
+		-webkit-transform: scale(1.1,1.1);
+		-moz-transform: scale(1.1,1.1);
+		-ms-transform: scale(1.1,1.1);
+		transform: scale(1.1,1.1);
+		transition: all 0.2s ease 0s;
+}
+.small-img {
+		width: 200px;
+		height: auto;
+		transition: all 0.2s ease 0s;
+}
+.small-img:hover {
+		-webkit-transform: scale(1.5,1.5);
+		-moz-transform: scale(1.5,1.5);
+		-ms-transform: scale(1.5,1.5);
+		transform: scale(1.5,1.5);
+		transition: all 0.2s ease 0s;
+}
+
+a:link {
+		color: #0066FF;
+		text-decoration: none;
+}
+a:visited {
+		text-decoration: none;
+		color: #0000CC;
+}
+a:hover {
+		text-decoration: underline;
+		color: #0033FF;
+}
+a:active {
+		text-decoration: none;
+		color: #0033FF;
+}
+
+::-moz-selection {
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-shadow: 0 0 4px black;
+}
+::selection {
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-shadow: 0 0 4px black;
+}
+
+.topdiv, .bottombar {
+		background-color: rgba(0,0,0,0.5);
+		padding: 5px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: default;
+		box-shadow: 0 0 70px 5px rgba(255,255,255,.5);
+		right: 0;
+		left: 0;
+		position: fixed;
+		color: white;
+		text-align: center;
+		line-height: 1.19;
+		z-index: 10;
+		transition: all .2s linear;
+}
+.topdiv:hover, .bottombar:hover {
+		transition: all .2s linear;
+		background-color: rgba(0,0,0,1);
+}
+.topdiv {
+		top: 0;
+}
+.bottombar {
+		bottom: 0;
+}
+.bottombar a {
+		margin-left: 10px;
+		margin-right: 10px;
+}
+.bgbutton {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		margin-right: 2px;
+		margin-left: 2px;
+		text-align: center;
+		font-weight: bold;
+		background-color: white;
+		color: rgb(40, 40, 40);
+		text-shadow: none;
+}
+.bgbutton:last-of-type {
+		margin-right: 0;
+}
+.active {
+		box-shadow: 0px 0px 10px 2px rgb(255, 255, 255), 0px 0px 0px 1px rgb(255, 255, 255);
+}
+
+.white-text {
+		color: white !important;
+		text-shadow: 0 0 2px rgba(0,0,0,0.5) !important;
+}
+
+.container {
+		box-shadow: 0 0 70px rgba(0,0,0,.5),0 0 0 1px transparent inset;
+		background-color: gold;
+		margin: 0 -8px 100px -8px;
+		padding: 60px;
+		font-size: 20px;
+		display: block;
+		color: inherit !important;
+		text-decoration: none !important;
+		transition: all 0.2s ease;
+}
+a.container:hover {
+		box-shadow: 0 0 70px rgba(0,0,0,.5),0 0 0 1px #0033FF inset;
+		transition: all 0.2s ease;
+}
+
+h1, h2, .subpage-heading {
+		margin-top: 0;
+		font-weight: normal;
+		text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+h1 {
+		text-align: center;
+		padding-top: 0;
+		margin-bottom: 20px;
+		font-size: 80px;
+}
+h2 {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 60px;
+}
+h3 {
+		margin: 20px 0;
+		font-size: 25px;
+		font-weight: 400;
+}
+.subpage-heading {
+		text-align: left;
+		margin: 0 -8px 0 -8px;
+		font-size: 70px;
+		background-color: rgb(40,40,40);
+		box-shadow: 0 0 50px black inset, 0 0 70px rgba(0,0,0,.5);
+		padding-left: 60px;
+}
+
+.middle {
+		margin-right: 61px;
+}
+
+.first {
+		margin-top: 0;
+}
+
+.last {
+		margin-bottom: 0;
+}
+
+button {
+		margin: 0 20px 0 0;
+		background-color: rgb(220, 220, 220);
+		padding: 8px;
+		border: 1px solid rgb(180, 180, 180);
+		cursor: pointer;
+		-webkit-transition: all .2s linear;
+		-moz-transition: all .2s linear;
+		-ms-transition: all .2s linear;
+		transition: all .2s linear;
+}
+button:hover {
+		background-color: rgb(235, 235, 235);
+		-webkit-transition: all .2s linear;
+		-moz-transition: all .2s linear;
+		-ms-transition: all .2s linear;
+		transition: all .2s linear;
+		box-shadow: 0px 0px 1px 0px rgb(180, 180, 180), 0px 0px 10px 0px rgb(180, 180, 180);
+}
+
+strong {
+		font-weight: 600;
+}

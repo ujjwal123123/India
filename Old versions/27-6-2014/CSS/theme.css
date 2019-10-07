@@ -1,0 +1,316 @@
+body, td, th {
+	
+		font-family: Arial, Helvetica, sans-serif;
+	
+
+}
+
+
+body {
+	
+		background-color: #999999;
+	
+		color: rgb(40, 40, 40);
+	
+		text-shadow: 0 0 2px rgba(255,255,255,0.5);
+	
+		text-align: justify;
+	
+		padding-top: 180px;
+	
+		padding-bottom: 180px;
+	
+
+}
+
+
+a:link {
+	
+		color: #0066FF;
+	
+		text-decoration: none;
+	
+
+}
+
+
+a:visited {
+	
+		text-decoration: none;
+	
+		color: #0000CC;
+	
+
+}
+
+
+a:hover {
+	
+		text-decoration: underline;
+	
+		color: #0033FF;
+	
+
+}
+
+
+a:active {
+	
+		text-decoration: none;
+	
+		color: #0033FF;
+	
+
+}
+
+
+::-moz-selection {
+	
+		background-color: #3399FF;
+	
+		color: white;
+	
+		text-shadow: 0 0 4px black;
+	
+
+}
+
+
+::selection {
+	
+		background-color: #3399FF;
+	
+		color: white;
+	
+		text-shadow: 0 0 4px black;
+	
+
+}
+
+
+.topdiv, .bottombar {
+	
+		background-color: black;
+	
+		padding: 5px;
+	
+		-moz-user-select: none;
+	
+		-webkit-user-select: none;
+	
+		-ms-user-select: none;
+	
+		user-select: none;
+	
+		cursor: default;
+	
+		box-shadow: 0 0 70px 5px rgba(0,0,0,.5);
+	
+		right: 0;
+	
+		left: 0;
+	
+		position: fixed;
+	
+		color: white;
+	
+		text-align: center;
+	
+
+}
+
+
+.topdiv {
+	
+		top: 0;
+	
+
+}
+
+
+.bottombar {
+	
+		bottom: 0;
+	
+
+}
+
+
+.bottombar a {
+	
+		margin-left: 10px;
+	
+		margin-right: 10px;
+	
+
+}
+
+
+.bgbutton {
+	
+		display: inline-block;
+	
+		width: 20px;
+	
+		height: 20px;
+	
+		cursor: pointer;
+	
+		margin-right: 5px;
+	
+		text-align: center;
+	
+		font-weight: bold;
+	
+		background-color: white;
+	
+		color: rgb(40, 40, 40);
+	
+		text-shadow: none;
+	
+
+}
+
+
+.active {
+	
+		box-shadow: 0 0 10px 2px white, 0 0 0 1px white;
+	
+
+}
+
+
+.white-text {
+	
+		color: white !important;
+	
+		text-shadow: 0 0 2px rgba(0,0,0,0.5) !important;
+	
+
+}
+
+
+.container {
+	
+		box-shadow: 0 0 70px rgba(0,0,0,.5);
+	
+		background-color: gold;
+	
+		margin: 0 -8px 100px -8px;
+	
+		padding: 60px;
+	
+		font-size: 20px;
+	
+		display: block;
+	
+		color: inherit !important;
+	
+		text-decoration: none !important;
+	
+
+}
+.container:hover {
+    border: 1px blue;
+}
+
+h1, h2, .subpage-heading {
+	
+		margin-top: 0;
+	
+		font-weight: normal;
+	
+		text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	
+
+}
+
+
+h1 {
+	
+		text-align: center;
+	
+		padding-top: 0;
+	
+		margin-bottom: 20px;
+	
+		font-size: 80px;
+	
+
+}
+
+
+h2 {
+	
+		text-align: center;
+	
+		margin-bottom: 10px;
+	
+		font-size: 60px;
+	
+
+}
+
+
+.subpage-heading {
+	
+		text-align: left;
+	
+		margin: 0 -8px 0 -8px;
+	
+		font-size: 70px;
+	
+		background-color: rgb(40,40,40);
+	
+		box-shadow: 0 0 50px black inset, 0 0 70px rgba(0,0,0,.5);
+	
+		padding-left: 60px;
+	
+
+}
+
+
+table, .empty {
+	
+		border: none;
+	
+		margin: 0;
+	
+		padding: 0;
+	
+
+}
+
+
+img {
+	
+		width: 200px;
+	
+		height: auto;
+	
+
+}
+
+
+.middle {
+	
+		margin-right: 66px;
+	
+
+}
+
+
+.last {
+	
+		margin-bottom: 0;
+	
+
+}
+
+
+.first {
+	
+		margin-top: 0;
+	
+
+}

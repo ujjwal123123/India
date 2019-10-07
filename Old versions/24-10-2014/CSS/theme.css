@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+
+body {
+		font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+		font-weight: 300;
+		background-color: rgb(20, 20, 20);
+		color: rgb(40, 40, 40);
+		text-shadow: 0 0 2px rgba(255,255,255,0.5);
+		text-align: justify;
+		padding-top: 180px;
+		padding-bottom: 180px;
+		line-height: 1.5;
+}
+
+table, .empty, td, tr {
+		margin: 0;
+		padding: 0;
+		border-spacing: 0;
+		border-collapse: collapse;
+}
+
+.img-table {
+		border-top: 1px solid rgb(180, 180, 180);
+		border-bottom: 1px solid rgb(180, 180, 180);
+		margin: 30px auto;
+		text-align: center;
+		padding: 0px;
+		overflow: hidden;
+}
+img {
+		display: block;
+}
+.image {
+		height: 350px;
+		width: auto;
+		transition: all 0.2s ease 0s;
+		padding: 20px;
+		display: initial;
+}
+.image:hover {
+		-webkit-transform: scale(1.1,1.1);
+		-moz-transform: scale(1.1,1.1);
+		-ms-transform: scale(1.1,1.1);
+		transform: scale(1.1,1.1);
+		transition: all 0.2s ease 0s;
+}
+.small-img {
+		width: 200px;
+		height: auto;
+		transition: all 0.2s ease 0s;
+}
+.small-img:hover {
+		-webkit-transform: scale(1.5,1.5);
+		-moz-transform: scale(1.5,1.5);
+		-ms-transform: scale(1.5,1.5);
+		transform: scale(1.5,1.5);
+		transition: all 0.2s ease 0s;
+}
+
+a:link {
+		color: #0066FF;
+		text-decoration: none;
+}
+a:visited {
+		text-decoration: none;
+		color: #0000CC;
+}
+a:hover {
+		text-decoration: underline;
+		color: #0033FF;
+}
+a:active {
+		text-decoration: none;
+		color: #0033FF;
+}
+
+::-moz-selection {
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-shadow: 0 0 4px black;
+}
+::selection {
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-shadow: 0 0 4px black;
+}
+
+footer, header {
+		background-color: rgb(255,255,255);
+		opacity: 0.8;
+		padding: 5px 10px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: default;
+		box-shadow: 0 0 0px 5px rgba(0,0,0,.2);
+		right: 0;
+		left: 0;
+		position: fixed;
+		color: black;;
+		display: block;
+		text-align: center;
+		line-height: 1.19;
+		z-index: 10;
+		transition: all .2s ease;
+		font-weight: 400;
+		color: rgb(40, 40, 40);
+		display: block;
+}
+header:hover, footer:hover {
+		transition: all 0.2s ease;
+		opacity: 5;
+		box-shadow: 0 0 20px 20px rgba(0,0,0,0.2);
+}
+header {
+		top: 0;
+}
+footer {
+		bottom: 0;
+}
+footer a {
+		margin-left: 10px;
+		margin-right: 10px;
+		color: inherit !important;;
+}
+.bgbutton {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		margin-right: 2px;
+		margin-left: 2px;
+		text-align: center;
+		font-weight: bold;
+		background-color: white;
+		color: rgb(40, 40, 40);
+		text-shadow: none;
+}
+.bgbutton:last-of-type {
+		margin-right: 0;
+}
+.active {
+		box-shadow: 0px 0px 5px 0px rgb(0, 0, 0),0px 0px 0px 1px rgb(0, 0, 0);
+}
+
+.container {
+		box-shadow: 0 0 70px rgba(0,0,0,.5),0 0 0 1px transparent inset;
+		background-color: gold;
+		margin: 0 2px 100px 2px;
+		padding: 60px;
+		font-size: 20px;
+		display: block;
+		color: inherit !important;
+		text-decoration: none !important;
+		transition: all 0.2s ease;
+}
+a.container:hover {
+		box-shadow: 0 0 70px rgba(0,0,0,.5),0 0 0 1px #0033FF inset;
+		transition: all 0.2s ease;
+}
+.container-small {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+h1, h2, .subpage-heading {
+		margin-top: 0;
+		font-weight: normal;
+		text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+h1 {
+		text-align: center;
+		padding-top: 0;
+		margin-bottom: 20px;
+		font-size: 80px;
+}
+h2 {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 60px;
+}
+h3 {
+		margin: 20px 0;
+		font-size: 25px;
+		font-weight: 400;
+}
+.subpage-heading {
+		text-align: left;
+		margin: 0 -8px 0 -8px;
+		font-size: 70px;
+		background-color: rgb(40,40,40);
+		box-shadow: 0 0 50px black inset, 0 0 70px rgba(0,0,0,.5);
+		padding-left: 60px;
+}
+
+.first {
+		margin-top: 0;
+}
+
+.last {
+		margin-bottom: 0;
+}
+
+button {
+		margin: 0 20px 0 0;
+		background-color: rgb(220, 220, 220);
+		padding: 8px;
+		border: 1px solid rgb(180, 180, 180);
+		cursor: pointer;
+		-webkit-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		transition: all .2s ease;
+}
+button:hover {
+		background-color: rgb(235, 235, 235);
+		-webkit-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		transition: all .2s ease;
+		box-shadow: 0px 0px 1px 0px rgb(180, 180, 180), 0px 0px 10px 0px rgb(180, 180, 180);
+}
+
+strong {
+		font-weight: 600;
+}
+
+
+
+
+
+body::-webkit-scrollbar {
+    height: 16px;
+    overflow: visible;
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 1px;
+    min-height: 28px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2) inset;
+    margin: 1px;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,0.5);
+
+body::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
+}
+
+body::-webkit-scrollbar-track {
+    border-width: 0;
+}
+
+body::-webkit-scrollbar-track-piece {
+    background-color: white;
+    border-width: 0;
+    /*box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;*/
+}
+
+body::-webkit-scrollbar-corner {
+    border: solid #fff;
+    border-width: 3px 0 0 3px;
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.14);
+    background: transparent;
+}

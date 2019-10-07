@@ -1,0 +1,291 @@
+/* © 2014-2016 Ujjwal Goel. All rights reserved. */
+
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400, 300);
+
+body {
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    font-weight: 300;
+    color: rgb(40, 40, 40);
+    padding-top: 180px;
+    padding-bottom: 180px;
+    line-height: 1.5;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../Media/map-blurred.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 28%;
+    background-size: cover;
+}
+
+table, .empty, td, tr {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.img-table {
+    border-top: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(180, 180, 180);
+    margin: 30px auto;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+img {
+    display: block;
+}
+.image {
+    height: 300px;
+    width: auto;
+    transition: all 0.2s ease 0s;
+    display: initial;
+    padding: 15px;
+}
+.image:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease 0s;
+}
+.small-img {
+    width: 200px;
+    height: auto;
+    transition: all 0.2s ease 0s;
+}
+.small-img:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease 0s;
+}
+
+a:link {
+    color: #0066ff;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #0000cc;
+}
+a:hover {
+    text-decoration: underline;
+    color: #0033ff;
+}
+a:active {
+    text-decoration: none;
+    color: #0033ff;
+}
+a:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: deepskyblue;
+}
+::-moz-selection {
+    background-color: rgba(10, 100, 240, 0.7); /*rgb(0,191,255) = deepskyblue*/
+    color: white;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+::selection {
+    background-color: rgba(10, 100, 240, 0.7); /*rgb(0,191,255) = deepskyblue*/
+    color: white;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+footer, header {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    padding: 5px 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+    right: 0;
+    left: 0;
+    position: fixed;
+    color: black;
+    text-align: center;
+    line-height: 1.19;
+    z-index: 10;
+    transition: all 0.2s ease;
+    color: rgb(40, 40, 40);
+    display: block;
+}
+header:hover, footer:hover {
+    transition: all 0.2s ease;
+    opacity: 1;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+header {
+    top: 0;
+}
+footer {
+    bottom: 0;
+}
+footer a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: inherit !important;
+}
+.bgbutton {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-left: 2px;
+    text-align: center;
+    background-color: white;
+    color: rgb(40, 40, 40);
+    text-shadow: none;
+}
+.bgbutton:last-of-type {
+    margin-right: 0;
+}
+.active {
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0), 0px 0 0 1px rgb(0, 0, 0);
+}
+
+.container {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 0 1px transparent inset;
+    background-color: gold;
+    margin-bottom: 100px;
+    padding: 5%;
+    /*! font-size: 20px; */
+    display: block;
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+a.container:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 0 1px deepskyblue inset;
+    transition: all 0.2s ease;
+}
+.container-small {
+    /*! width: 70%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, .subpage-heading {
+    margin-top: 0;
+    font-weight: 300;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 50px;
+    font-size: 80px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+h3 {
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+.subpage-heading {
+    text-align: left;
+    margin: 0;
+    font-size: 50px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 0 70px black inset, 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 0 5%;
+}
+
+.first {
+    margin-top: 0;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+a.about-link {
+    margin: 0 20px 20px 0;
+    background-color: white;
+    padding: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+    color: rgb(40, 40, 40);
+    display: inline-block;
+}
+a.about-link:hover {
+    background-color: rgb(235, 235, 235);
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-decoration: none;
+}
+a.about-link:active {
+    background-color: rgb(200, 200, 200);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+strong {
+    font-weight: 400;
+}
+
+@media all and (min-width: 670px) {
+    .container {
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+    .subpage-heading {
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .container-small {
+        width: auto;
+    }
+    a.container-small:nth-child(8)
+        > table:nth-child(1)
+        > tbody:nth-child(1)
+        > tr:nth-child(1)
+        > td:nth-child(1)
+        > img:nth-child(1) {
+        margin-right: 40px !important;
+    }
+    a.container-small:nth-child(6)
+        > table:nth-child(1)
+        > tbody:nth-child(1)
+        > tr:nth-child(1)
+        > td:nth-child(2)
+        > img:nth-child(1),
+    a.container-small:nth-child(10)
+        > table:nth-child(1)
+        > tbody:nth-child(1)
+        > tr:nth-child(1)
+        > td:nth-child(2)
+        > img:nth-child(1) {
+        margin-left: 40px !important;
+    }
+    .small-img:hover {
+        transform: scale(1.2, 1.2);
+    }
+    .image {
+        padding: 15px;
+        max-width: 90%;
+    }
+    .image:hover {
+        transform: none;
+    }
+    .small-img {
+        display: none;
+    }
+    footer {
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+    header td:nth-child(1),
+    header td:nth-child(3) {
+        display: none;
+    }
+}
